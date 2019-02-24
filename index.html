@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Create some random users in JSON</title>
+    <link rel="stylesheet" href="assets/style.css" />
     <script src="assets/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Create some filtered random users in JSON</h1>
+    <h2>Follow these steps:</h2>
+    <ol>
+      <li>Determine the amount of users that you need</li>
+      <li>Let's say we need 10 dutch (nat=nl) users</li>
+      <li>
+        Visit this url:
+        <a href="https://randomuser.me/api/?nat=nl&results=10" target="_blank"
+          >https://randomuser.me/api/?nat=nl&results=10</a
+        >
+      </li>
+      <li>Copy paste the JSON in the dummy.json file in the assets-folder</li>
+      <li>Click on the "Get some filtered users" button below</li>
+      <li>Copy the filtered users from the console</li>
+    </ol>
 
-</body>
+    <p>
+      Need other properties or less properties? Then edit the code in script.js in the generateFilteredUser
+      function.
+    </p>
+
+    <button id="getUsers" type="submit">Get some filtered users!</button>
+
+    <p>Thanks to <a href="https://randomuser.me/" target="_blank">https://randomuser.me/</a> for the API!</p>
+  </body>
 </html>
